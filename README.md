@@ -22,3 +22,5 @@
 
 ## Над проектом работали:
 **[Павел Корсаков](https://github.com/KorsakovPV)**.
+
+При работе над проектом использован стек технологий: **[Python 3.7.4](https://www.python.org/)**, **[GitHub](https://github.com)**, IDE **[PyCharm](https://www.jetbrains.com/pycharm/)**, OS Linux **[Ubuntu](https://ubuntu.com/)**
