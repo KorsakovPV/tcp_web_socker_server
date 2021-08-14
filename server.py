@@ -29,4 +29,4 @@ while True:
             logging.info(data)
     except ValueError:
         connection.close()
-        logging.info('ValueError. Сonnection close.')
+        logging.info('ValueError. Connection close.')
