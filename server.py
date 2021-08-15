@@ -22,6 +22,8 @@ while True:
     try:
         print('Подключено к:', client_address)
         while True:
+            # len = int(connection.recv(2).decode("utf-8"))
+            # data = connection.recv(len).decode("utf-8").rstrip()
             data = connection.recv(24).decode("utf-8").rstrip()
             # if not data:
             #     break

@@ -20,6 +20,9 @@ try:
         zhq = f'{secrets.randbelow(1000):03}'  # zhq - десятые сотые тысячные
         gg = f'{secrets.randbelow(20):02}'  # GG - номер группы
         message = f'{bbbb} {nn} {hh}:{mm}:{ss}.{zhq} {gg}\n'
+        # if len(message.encode()) < 100:
+        #     sock.sendall(f'{(len(message.encode())):02}'.encode())
+        #     sock.sendall(message.encode())
         sock.sendall(message.encode())
 
 finally:
