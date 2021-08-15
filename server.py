@@ -23,6 +23,8 @@ while True:
         print('Подключено к:', client_address)
         while True:
             data = connection.recv(24).decode("utf-8").rstrip()
+            # if not data:
+            #     break
             bbbb, nn, hh, mm, ss_zsh, gg = re.split(' |:', data)
             if gg == '00':
                 print(f'cпортсмен, нагрудный номер {bbbb} прошёл отсечку {nn} в «{hh}:{mm}:{ss_zsh[:4]}»')
