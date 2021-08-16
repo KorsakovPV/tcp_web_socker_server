@@ -21,10 +21,9 @@ while True:
     connection, client_address = sock.accept()
     try:
         print('Подключено к:', client_address)
-        while True:
+        while data := connection.recv(24).decode("utf-8").rstrip():
             # len = int(connection.recv(2).decode("utf-8"))
             # data = connection.recv(len).decode("utf-8").rstrip()
-            data = connection.recv(24).decode("utf-8").rstrip()
             # if not data:
             #     break
             bbbb, nn, hh, mm, ss_zsh, gg = re.split(' |:', data)
