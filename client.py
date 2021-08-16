@@ -11,8 +11,8 @@ print('Подключено к {} порт {}'.format(*server_address))
 sock.connect(server_address)
 
 try:
-    for _ in range(100):
-        bbbb = f'{secrets.randbelow(60):04}' # BBBB - номер участника
+    for _ in range(10000):
+        bbbb = f'{secrets.randbelow(9999):04}' # BBBB - номер участника
         nn = f"C{secrets.choice(string.digits)}"  # NN - id канала
         hh = f'{secrets.randbelow(6):02}'  # HH - Часы
         mm = f'{secrets.randbelow(60):02}'  # MM - минуты
